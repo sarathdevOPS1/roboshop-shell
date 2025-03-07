@@ -1,3 +1,5 @@
+cp mongodb.repo /etc/yum.repos.d/mongo.repo
+cp catalogue.sercpvice /etc/systemd/system/catalogue.service
 
 dnf module disable nodejs -y
 dnf module enable nodejs:20 -y
@@ -13,10 +15,6 @@ unzip /tmp/catalogue.zip
 
 cd /app
 npm install
-
-cp catalogue.service /etc/systemd/system/catalogue.service
-
-cp mongodb.repo /etc/yum.repos.d/mongo.repo
 
 dnf install mongodb-mongosh -y
 
