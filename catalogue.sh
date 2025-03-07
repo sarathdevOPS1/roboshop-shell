@@ -17,7 +17,7 @@ cd /app
 npm install
 
 dnf install mongodb-mongosh -y
-mongosh --host mongodb.sarathdev96.online </app/db/master-data.js
+mongosh --host 172.31.88.212 </app/db/master-data.js
 
 systemctl daemon-reload
 systemctl enable catalogue
