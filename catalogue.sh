@@ -17,7 +17,7 @@ cd /app
 npm install
 
 dnf install mongodb-mongosh -y
-mongosh --host 172.31.18.140 </app/db/master-data.js
+mongosh --host 172.31.31.71 </app/db/master-data.js
 
 systemctl daemon-reload
 systemctl enable catalogue
