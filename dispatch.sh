@@ -1,5 +1,5 @@
 color="\e[34m"
-no color="\e[0m"
+no_color="\e[0m"
 
 echo -e "$color copy dispatch service file $no_color"
 cp dispatch.service /etc/systemd/system/dispatch.service
