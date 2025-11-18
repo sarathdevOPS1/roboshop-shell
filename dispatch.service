@@ -1,11 +1,11 @@
 [Unit]
-Description = Dispatch Service
+Description = $app_name Service
 [Service]
 User=roboshop
 Environment=AMQP_HOST=RABBITMQ-IP
 Environment=AMQP_USER=roboshop
 Environment=AMQP_PASS=roboshop123
-ExecStart=/app/dispatch
+ExecStart=/app/$app_name
 SyslogIdentifier=dispatch
 
 [Install]
