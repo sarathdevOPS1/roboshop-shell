@@ -11,6 +11,7 @@ echo -e "$color add application user $no_color"
 useradd roboshop
 
 echo -e "$color create application directory $no_color"
+rm -rf /app
 mkdir /app
 
 echo -e "$color downlaod apllication content $no_color"
